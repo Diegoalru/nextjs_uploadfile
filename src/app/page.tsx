@@ -9,6 +9,8 @@ export default function HomePage() {
         const selectedFile = event.target.files![0];
         if (selectedFile !== undefined) {
             setFile(selectedFile)
+        } else {
+            setFile(undefined)
         }
     };
 
