@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Código de carga de archivos en React y Next.js
+Este es un ejemplo de código en React y Next.js que permite cargar archivos y obtener detalles sobre el archivo seleccionado, como el nombre, el tipo y el tamaño. También incluye una vista previa de la imagen seleccionada.
 
-## Getting Started
+## Uso
+Para utilizar este código, simplemente clona el repositorio y ejecuta `npm install` para instalar las dependencias. Luego, ejecuta `npm run dev` para iniciar el servidor de desarrollo.
 
-First, run the development server:
+## Estructura del código
+El código se divide en dos funciones principales:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **handleFileUpload**: esta función se ejecuta cuando se selecciona un archivo para cargar. Actualiza el estado del archivo seleccionado utilizando useState.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **handleSubmit**: esta función se ejecuta cuando se envía el formulario de carga de archivos. Crea un objeto FormData y lo envía a través de una solicitud POST utilizando fetch. También muestra los detalles del archivo seleccionado y una vista previa de la imagen.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologías utilizadas
+Este código utiliza las siguientes tecnologías:
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+* Next.js
+* TypeScript
+* Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Agredecimientos
+Este codigo se basa en el siguiente tutorial: [fazt/nextjs-uploadfile](https://github.com/fazt/nextjs-uploadfile)
