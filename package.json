@@ -2,11 +2,19 @@
   "name": "nextjs-upload",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "email": "diegoalru@gmail.com",
+    "name": "Diego Alonso Rubí Salas"
+  },
+  "readme": "A Next.js project oriented to upload files",
+  "description": "A Next.js project oriented to upload files",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next"
   },
   "dependencies": {
     "@types/node": "18.16.3",
