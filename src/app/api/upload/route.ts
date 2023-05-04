@@ -30,7 +30,7 @@ export async function POST(request: Request) {
 
         return createResponse("File uploaded", 200);
     } catch (e) {
-        return createResponse(`Error: Internal error while uploading file`, 500, ContentType.TEXT);
+        return createResponse(`Internal error while uploading file`, 500);
     }
 }
 
@@ -44,7 +44,7 @@ async function fileExists(filePath: string): Promise<boolean> {
 
 function createResponse(message: string, status: number, type: ContentType = ContentType.JSON) {
     return new NextResponse(JSON.stringify({
-        message,
+        message: message,
     }), {
         status: status,
         headers: {
